@@ -1,0 +1,128 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{adjustbox} % To adjust regression tables
+\usepackage{lscape} % To activate landscape modeù
+ \usepackage{hyperref} % for cross-references
+
+\usepackage[authordate,backend=biber,maxnames=3,minnames=1, dashed=false, maxbibnames =99]{biblatex-chicago} % Use the Chicago author-date style
+\addbibresource{references.bib}
+% Customize the citation format to put the year in parentheses
+\renewbibmacro*{cite:labelyear+extrayear}{%
+  \iffieldundef{labelyear}
+    {}
+    {\printtext[bibhyperref]{%
+       \mkbibparens{\printfield{labelyear}%
+       \printfield{extrayear}}}}}
+
+
+\title{Master Thesis}
+\author{Federico Vicentini}
+\date{May 2024}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+
+\newpage
+\section{Introduction}
+
+
+\newpage
+\section{The EDIH Initiative}
+
+\newpage
+\section{The DMA Survey}
+
+\newpage
+\section{Analysis of the Survey Responses}
+
+\newpage
+\section{What are the drivers of participation?}
+
+\newpage
+\section{Discussion and Conclusions}
+
+
+\newpage
+\section{COPYPASTE OF REGRESSION TABLES (TEMPORARY!!!!)}
+
+ 
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+ % Date and time: lun, ago 05, 2024 - 22:17:07
+ \begin{table}[!htbp] \centering 
+   \caption{} 
+   \label{} 
+ \begin{tabular}{@{\extracolsep{5pt}}lcccc} 
+ \\[-1.8ex]\hline 
+ \hline \\[-1.8ex] 
+  & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
+ \cline{2-5} 
+ \\[-1.8ex] & \multicolumn{4}{c}{treated} \\ 
+ \\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+ \hline \\[-1.8ex] 
+  distance\_from\_edih &  & 0.003$^{***}$ & 0.004$^{***}$ & 0.003$^{***}$ \\ 
+   &  & (0.0003) & (0.0003) & (0.0003) \\ 
+   & & & & \\ 
+  firm\_density &  &  & 0.005$^{***}$ & 0.004$^{***}$ \\ 
+   &  &  & (0.0003) & (0.0004) \\ 
+   & & & & \\ 
+  sector\_typeManufacturing & 1.141$^{***}$ & 1.094$^{***}$ & 1.117$^{***}$ & 0.191$^{**}$ \\ 
+   & (0.070) & (0.071) & (0.072) & (0.093) \\ 
+   & & & & \\ 
+  sector\_typeServices & 0.473$^{***}$ & 0.508$^{***}$ & 0.421$^{***}$ & 0.109 \\ 
+   & (0.060) & (0.061) & (0.062) & (0.067) \\ 
+   & & & & \\ 
+  tech\_levelHigh &  &  &  & 1.217$^{***}$ \\ 
+   &  &  &  & (0.170) \\ 
+   & & & & \\ 
+  tech\_levelMedium &  &  &  & 0.843$^{***}$ \\ 
+   &  &  &  & (0.128) \\ 
+   & & & & \\ 
+  tech\_levelMedium-High &  &  &  & 1.456$^{***}$ \\ 
+   &  &  &  & (0.080) \\ 
+   & & & & \\ 
+  tech\_levelMedium-Low &  &  &  & 0.829$^{***}$ \\ 
+   &  &  &  & (0.064) \\ 
+   & & & & \\ 
+  operating\_revenue\_turnover & $-$0.0004 & $-$0.0004 & $-$0.0002 & $-$0.0003 \\ 
+   & (0.001) & (0.001) & (0.001) & (0.001) \\ 
+   & & & & \\ 
+  employees & 0.544$^{***}$ & 0.570$^{***}$ & 0.537$^{***}$ & 0.551$^{***}$ \\ 
+   & (0.149) & (0.149) & (0.147) & (0.149) \\ 
+   & & & & \\ 
+  total\_assets & $-$0.0003 & $-$0.0002 & $-$0.0003 & $-$0.0003 \\ 
+   & (0.0003) & (0.0003) & (0.0003) & (0.0003) \\ 
+   & & & & \\ 
+  liquidity\_ratio & $-$0.054$^{***}$ & $-$0.052$^{***}$ & $-$0.056$^{***}$ & $-$0.060$^{***}$ \\ 
+   & (0.006) & (0.006) & (0.006) & (0.007) \\ 
+   & & & & \\ 
+  debtoverequity & 0.00000 & 0.00000 & 0.00000 & 0.00000 \\ 
+   & (0.00001) & (0.00001) & (0.00001) & (0.00001) \\ 
+   & & & & \\ 
+  solvency\_ratio\_assetbased & 0.009$^{***}$ & 0.009$^{***}$ & 0.009$^{***}$ & 0.009$^{***}$ \\ 
+   & (0.001) & (0.001) & (0.001) & (0.001) \\ 
+   & & & & \\ 
+  distance\_from\_edih:firm\_density &  &  &  & 0.0002$^{***}$ \\ 
+   &  &  &  & (0.00002) \\ 
+   & & & & \\ 
+  Constant & $-$1.453$^{***}$ & $-$1.626$^{***}$ & $-$1.809$^{***}$ & $-$1.800$^{***}$ \\ 
+   & (0.061) & (0.064) & (0.067) & (0.070) \\ 
+   & & & & \\ 
+ \hline \\[-1.8ex] 
+ Observations & 4,991 & 4,991 & 4,991 & 4,991 \\ 
+ Log Likelihood & $-$2,493.156 & $-$2,419.384 & $-$2,300.559 & $-$2,049.495 \\ 
+ Akaike Inf. Crit. & 5,004.311 & 4,858.769 & 4,623.118 & 4,130.989 \\ 
+ \hline 
+ \hline \\[-1.8ex] 
+ \textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+ \end{tabular} 
+ \end{table}
+
+\nocite{*}
+\printbibliography
+
+
+\end{document}
